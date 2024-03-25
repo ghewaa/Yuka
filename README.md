@@ -1,11 +1,11 @@
 # Yuka Data Analysis
 
-This repository contains data analysis on the Yuka application data. 
+This repository contains data analysis on Yuka application. 
 Yuka is a mobile application designed to help consumers make healthier food choices by providing information about the nutritional quality of various food products.
 
 ## Overview
 
-In this project, we aim to analyze the data collected by the Yuka application and derive insights regarding:
+In this project, we aim to analyze the data collected by Yuka application and derive insights regarding:
 
 - 
 - 
@@ -14,7 +14,7 @@ In this project, we aim to analyze the data collected by the Yuka application an
 
 ## Data
 
-The data used in this analysis is sourced from the Yuka application database.
+The data used in this analysis is sourced from Yuka application database.
 It includes information about various food products, their nutritional content, grades, and other relevant attributes.
 
 ## Analysis
