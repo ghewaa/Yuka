@@ -26,7 +26,7 @@ The analysis is performed using Python programming language and relevant data an
 
 - `data/`: Contains the data files (small sample for now) 
 - `Reports/`: Results and visualizations obtained from the analysis.
-- `src/`: Supporting scripts used for data preprocessing or analysis.
+- `src/`: Supporting scripts used for data preprocessing and analysis.
 
 
 
