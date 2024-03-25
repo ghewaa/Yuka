@@ -29,7 +29,7 @@ We followed these steps during the analysis:
 - Conducted statistical analyses to uncover patterns and correlations
 - Used visualization techniques to present findings effectively
 
-  ## Future Work
+## Future Work
 
 In the future, we plan to:
 
@@ -43,7 +43,7 @@ In the future, we plan to:
 - `Reports/`: Results and visualizations obtained from the analysis
 - `src/`: Supporting scripts used for data preprocessing and analysis
 
-  ## Usage
+## Usage
 
 To get started with the project, follow these steps:
 
@@ -52,6 +52,8 @@ To get started with the project, follow these steps:
    ```bash
    git clone https://github.com/ghewaa/Yuka.git
 
-2. To install dependencies
+2. To install dependencies:
+
+    ```bash
    pip install -r requirements.txt
 
