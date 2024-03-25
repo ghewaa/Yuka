@@ -28,6 +28,5 @@ The analysis is performed using Python programming language and relevant data an
 - `Reports/`: Results and visualizations obtained from the analysis.
 - `src/`: Supporting scripts used for data preprocessing or analysis.
 
-## Usage
 
 
