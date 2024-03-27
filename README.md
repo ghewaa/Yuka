@@ -34,6 +34,7 @@ We followed these steps during the analysis:
 In the future, we plan to:
 
 - Incorporate additional data sources to enrich our analysis
+- Analyze equilibrium effects
 - Build predictive models to forecast user behavior
 
 
