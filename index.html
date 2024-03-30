@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+        <title>Yuka project</title>
+    </head>
+    <body>
+        <div class="container"></div>
+        <div class="topbar">
+            <div class="logo">
+                <h1>Yuka</h1>
+                <img src="img/logo.jpg" alt="">
+            </div>
+        </div>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fas fa-book-open"></i>
+                    <div>Introduction</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-users"></i>
+                    <div>Users</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-utensils"></i>
+                    <div>Food Products</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-barcode"></i>
+                    <div>Scans</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <<div class="main">
+        <div class="about-yuka">
+            <h2>About Yuka</h2>
+            <p>Yuka is a mobile application which allows you to scan food and cosmetic products in order to obtain detailed information about the impact of a product on health. The aim of the application is to help consumers choose products deemed good for their health and to encourage manufacturers to improve the composition of their products. This application works by scanning the barcode of the chosen product and returns a grade in the form of a color ranging from green (excellent) to red (bad). When the impact of a product is deemed negative, the application recommends similar products that are better for the health. Yuka bases its grade on the nutritional quality of the product which represents 60% of the grade, the presence of additives which represents 30% of the grade, and the organic aspect which represents the remaining 10% of the grade. </p>
+        </div>
+        <div class="chart-container">
+            <canvas id="gradingChart"></canvas>
+            <h3>Grade of Products</h3>
+        </div>
+        <div class="dashboard-info">
+            <h2>Data Analysis Dashboard</h2>
+            <p>The Yuka Data Analysis Dashboard is a tool designed to analyze the data collected from Yuka application. It provides insights into trends in food products, nutritional patterns, and more. Through visualizations and data summaries, this dashboard aims to assist in understanding and interpreting the data gathered by the Yuka application.</p>
+        </div>
+        <div class="future-work">
+            <h2>Future Work</h2>
+            <ul>
+                <li>Incorporate additional data sources to enrich our analysis</li>
+                <li>Analyze equilibrium effects</li>
+                <li>Build predictive models to forecast user behavior</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script src="gradechart.js"></script>
+</body>
+</html>
+
+
+
