@@ -241,9 +241,16 @@ p {
     }
 } 
 
+
+#users-content {
+    display: flex; /* Use flexbox to arrange children side by side */
+    justify-content: space-between; /* Add space between table and image */
+}
+
 .user-table {
     border-collapse: collapse;
-    width: 100%;
+    width: 90%; /* Set the width of the table */
+    min-height: calc(100vh - 68%);
 }
 
 .user-table th,
@@ -253,8 +260,8 @@ p {
     text-align: center;
 }
 
-.user-table th {
-    background-color: #f2f2f2;
+.user-table tr:first-child {
+    background-color: #C8E6C9; 
 }
 
 .user-table tr:nth-child(even) {
@@ -263,4 +270,16 @@ p {
 
 .user-table tr:hover {
     background-color: #ddd;
+}
+
+.graph-container {
+    width: 50%; /* Increase the width of the image container */
+    margin-top: 15px; /* Add margin to the top to lower the image container */
+}
+
+.graph-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Adjust the maximum height of the image */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
 }
