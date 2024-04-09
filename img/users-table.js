@@ -1,4 +1,3 @@
-// JavaScript code to generate the table
 document.addEventListener('DOMContentLoaded', function() {
     // Data for the table
     const userData = [
@@ -19,13 +18,29 @@ document.addEventListener('DOMContentLoaded', function() {
         table.classList.add("user-table");
 
         // Loop through each row of data
-        data.forEach(function(rowData) {
+        data.forEach(function(rowData, rowIndex) {
             const row = document.createElement("tr");
 
             // Loop through each cell of the row
-            rowData.forEach(function(cellData) {
+            rowData.forEach(function(cellData, cellIndex) {
                 const cell = document.createElement("td");
-                cell.textContent = cellData;
+                // Check if the cell data is a number
+                if (typeof cellData === 'number') {
+                    // Convert number to string with commas
+                    cell.textContent = cellData.toLocaleString();
+                } else {
+                    cell.textContent = cellData;
+                }
+
+                // If it's not the first row (header row), add click event listener
+                if (rowIndex !== 0 && cellIndex !== 0) {
+                    cell.classList.add('clickable');
+                    cell.addEventListener('click', function() {
+                        // Function to display graph based on clicked country
+                        displayGraph(rowData[0]); // Pass the country name to the function
+                    });
+                }
+
                 row.appendChild(cell);
             });
 
@@ -37,5 +52,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Call the function to generate the table with the provided data
     generateTable(userData);
-});
 
+
+    // Function to display graph based on clicked country
+    function displayGraph(country) {
+        // Assuming you have an element with id 'nb-users' for displaying the graph
+        const graphElement = document.getElementById('nb-users');
+
+        // Clear previous graph content
+        graphElement.innerHTML = '';
+
+        // Create an image element for the graph
+        const graphImage = document.createElement('img');
+
+        // Set the source of the image based on the selected country
+        const imagePath = `img/${country.toLowerCase()}_users.png`; // Assuming images are named as 'countryname-graph.jpg'
+        graphImage.src = imagePath;
+        graphImage.alt = `Graph for ${country}`;
+
+        // Append the graph image to the graph element
+        graphElement.appendChild(graphImage);
+    }
+});
