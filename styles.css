@@ -283,3 +283,53 @@ p {
     width: auto; /* Maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
 }
+
+
+.user-table {
+    border-collapse: collapse;
+    width: 90%; /* Set the width of the table */
+    min-height: calc(100vh - 68%);
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.user-table tr:first-child {
+    background-color: #C8E6C9; 
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+    background-color: #ddd;
+}
+
+.table-container {
+    margin-top: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
