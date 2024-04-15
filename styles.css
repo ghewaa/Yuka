@@ -310,26 +310,28 @@ p {
     background-color: #ddd;
 }
 
-.table-container {
-    margin-top: 20px;
-  }
-  
-  table {
+
+.product-table {
     border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
+    width: 90%; /* Set the width of the table */
+    min-height: calc(100vh - 68%);
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ddd;
     padding: 8px;
-  }
-  
-  th {
+    text-align: center;
+}
+
+.product-table tr:first-child {
+    background-color: #C8E6C9; 
+}
+
+.product-table tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
+}
+
+.product-table tr:hover {
+    background-color: #ddd;
+}
