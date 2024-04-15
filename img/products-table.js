@@ -86,11 +86,11 @@ const tableData = [
   ];
   
  // Get the table container element from your HTML
-const tableContainer = document.getElementById("table-container");
+const tableContainer = document.getElementById("products-table");
 
 // Create a table element
 const table = document.createElement("table");
-table.classList.add("dynamic-table");
+table.classList.add("product-table");
 
 // Create a table header row
 const headerRow = document.createElement("tr");
@@ -136,3 +136,4 @@ tableData.forEach(item => {
 
 // Add the table to the table container in your HTML
 tableContainer.appendChild(table);
+
