@@ -33,7 +33,7 @@
             </li>
             <li>
                 <a href="#" onclick="showSection('users')">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-user"></i>
                     <div>Users</div>
                 </a>
             </li>
@@ -44,9 +44,15 @@
                 </a>
             </li>
             <li>
-                <a href="#" onclick="showSection('scans')">
-                    <i class="fas fa-barcode"></i>
-                    <div>Scans</div>
+                <a href="#" onclick="showSection('cosmetics')">
+                    <i class="fas fa-tint"></i>
+                    <div>Cosmetic Products</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="showSection('graphs')">
+                    <i class="fas fa-chart-bar"></i>
+                    <div>Graphs</div>
                 </a>
             </li>
         </ul>
@@ -85,11 +91,141 @@
             <p>Information about food products goes here.</p>
             <div id="products-table" class="product-table"></div>
         </div>
-        <div id="scans" class="section hidden">
-            <p>Information about scans goes here.</p>
+        <div id="cosmetics" class="section hidden">
+            <p>Information about cosmetic products goes here.</p>
+        </div>
+        <div id="graphs" class="section hidden">
+            <h2>Select Graph Parameters</h2>
+            <div class="parameters">
+                <label for="categories1">Categories:</label>
+                <select id="categories1">
+                    <option value="allFood">All Food Products</option>
+                    <option value="allCosmetics">All Cosmetic Products</option>
+                    <option value="meat">Meat products/option>
+                    <option value="diary">Diary products</option>
+                    <option value="cereals">Cereals, biscuits and chocolates </option>
+                    <option value="beverages">Beverages</option>
+                </select>
+                <label for="year1">Year:</label>
+                <select id="year1">
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+                <label for="presence1">Presence:</label>
+                <select id="presence1">
+                    <option value="only2018">Only in 2018</option>
+                    <option value="only2021">Only in 2021</option>
+                    <option value="both">In both datasets</option>
+                </select>
+                <label for="outcome1">Outcome:</label>
+                <select id="outcome1">
+                    <option value="grade">Yuka Grade</option>
+                    <option value="nutriscore">Nutriscore</option>
+                </select>
+                <label for="scans1">Scans:</label>
+                <select id="scans1">
+                    <option value="all">All</option>
+                    <option value="most">Most 50000 scanned products</option>
+                </select>
+                <label for="weight1">Weight:</label>
+                <select id="weight1">
+                    <option value="no-weight">No weight</option>
+                    <option value="scan-weight">Nb of scans</option>
+                </select>
+                <!-- Add more parameter options as needed -->
+            </div>
+           </div>
+            <div id="secondGraphParams" class="hidden">
+                <h2>Second curve</h2>
+                <div class="parameters">
+                    <label for="categories2">Categories:</label>
+                    <select id="categories2">
+                        <option value="allFood">All Food Products</option>
+                        <option value="allCosmetics">All Cosmetic Products</option>
+                        <option value="meat">Meat products/option>
+                        <option value="diary">Diary products</option>
+                        <option value="cereals">Cereals, biscuits and chocolates </option>
+                        <option value="beverages">Beverages</option>
+                    </select>
+                    <label for="year2">Year:</label>
+                    <select id="year2">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    <label for="presence2">Presence:</label>
+                <select id="presence2">
+                    <option value="only2018">Only in 2018</option>
+                    <option value="only2021">Only in 2021</option>
+                    <option value="both">In both datasets</option>
+                </select>
+                <label for="outcome2">Outcome:</label>
+                <select id="outcome2">
+                    <option value="grade">Yuka Grade</option>
+                    <option value="nutriscore">Nutriscore</option>
+                </select>
+                <label for="scans2">Scans:</label>
+                <select id="scans2">
+                    <option value="all">All</option>
+                    <option value="most">Most 50000 scanned products</option>
+                </select>
+                <label for="weight2">Weight:</label>
+                <select id="weight2">
+                    <option value="no-weight">No weight</option>
+                    <option value="scan-weight">Nb of scans</option>
+                </select>
+                </div>
+            </div>
+            <div id="thirdGraphParams" class="hidden">
+                <h2>Third curve</h2>
+                <div class="parameters">
+                    <label for="categories3">Categories:</label>
+                    <select id="categories3">
+                        <option value="allFood">All Food Products</option>
+                        <option value="allCosmetics">All Cosmetic Products</option>
+                        <option value="meat">Meat products/option>
+                        <option value="diary">Diary products</option>
+                        <option value="cereals">Cereals, biscuits and chocolates </option>
+                        <option value="beverages">Beverages</option>
+                    </select>
+                    <label for="year3">Year:</label>
+                    <select id="year3">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    <label for="presence3">Presence:</label>
+                <select id="presence3">
+                    <option value="only2018">Only in 2018</option>
+                    <option value="only2021">Only in 2021</option>
+                    <option value="both">In both datasets</option>
+                </select>
+                <label for="outcome3">Outcome:</label>
+                <select id="outcome3">
+                    <option value="grade">Yuka Grade</option>
+                    <option value="nutriscore">Nutriscore</option>
+                </select>
+                <label for="scans3">Scans:</label>
+                <select id="scans3">
+                    <option value="all">All</option>
+                    <option value="most">Most 50000 scanned products</option>
+                </select>
+                <label for="weight3">Weight:</label>
+                <select id="weight3">
+                    <option value="no-weight">No weight</option>
+                    <option value="scan-weight">Nb of scans</option>
+                </select>
+                </div>
+            </div>
+            <button onclick="toggleSecondGraph()">Add One More Curve</button>
+            <button onclick="displayGraph()">Display Graph</button>            
+            <div id="graphContainer"></div>
         </div>
     </div>
-</div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 <script src="img/gradechart.js"></script>
 <script>
@@ -109,5 +245,6 @@
 </script>
 <script src="img/users-table.js"></script>
 <script src="img/products-table.js"></script>
+<script src="img/graphs.js"></script>
 </body>
 </html>
